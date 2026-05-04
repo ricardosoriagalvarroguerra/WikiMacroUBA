@@ -1,0 +1,41 @@
+@import "katex/dist/katex.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+  background-color: #ffffff;
+  color: #111111;
+  --serif: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+html, body, #root { min-height: 100vh; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+* { box-sizing: border-box; }
+
+@layer components {
+  .prose-wiki { @apply w-full max-w-[72ch]; }
+  .prose-wiki h1 { @apply text-2xl sm:text-3xl font-medium mt-2 mb-4 text-neutral-900 leading-tight; font-family: var(--serif); }
+  .prose-wiki h2 { @apply text-lg sm:text-xl font-medium mt-8 mb-2 text-neutral-900 leading-tight; font-family: var(--serif); }
+  .prose-wiki h3 { @apply text-base font-medium mt-6 mb-2 text-neutral-900; }
+  .prose-wiki h4 { @apply text-base font-medium mt-4 mb-1 text-neutral-900; }
+  .prose-wiki p  { @apply my-3 leading-relaxed text-neutral-700; }
+  .prose-wiki ul { @apply list-disc pl-5 my-3 space-y-1 text-neutral-700; }
+  .prose-wiki ol { @apply list-decimal pl-5 my-3 space-y-1 text-neutral-700; }
+  .prose-wiki a  { @apply text-neutral-900 underline underline-offset-2 decoration-neutral-300 hover:decoration-neutral-900; }
+  .prose-wiki code { @apply bg-neutral-100 text-neutral-800 px-1 rounded text-[0.85em]; }
+  .prose-wiki blockquote { @apply border-l-2 border-neutral-300 pl-4 text-neutral-600 my-4; }
+  .prose-wiki table { @apply block w-full overflow-x-auto text-sm my-4 border-collapse whitespace-nowrap; }
+  .prose-wiki th, .prose-wiki td { @apply border-b px-3 py-2 text-left border-neutral-200; }
+  .prose-wiki th { @apply font-medium text-neutral-900; }
+
+  .card { @apply bg-white border border-neutral-200 rounded-md p-4 sm:p-5; }
+  .card-hover { @apply hover:border-neutral-400 transition-colors; }
+  .pill { @apply inline-block text-xs px-2 py-0.5 rounded-full bg-neutral-100 text-neutral-700 border border-neutral-200; }
+  .btn { @apply inline-flex items-center justify-center gap-2 px-3 py-1.5 rounded border border-neutral-900 bg-neutral-900 text-white text-sm hover:bg-neutral-800 transition disabled:opacity-40 disabled:cursor-not-allowed; }
+  .btn-secondary { @apply inline-flex items-center justify-center gap-2 px-3 py-1.5 rounded border border-neutral-300 text-sm text-neutral-700 hover:border-neutral-500 transition disabled:opacity-40 disabled:cursor-not-allowed; }
+}
