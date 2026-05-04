@@ -12,8 +12,9 @@ dist
 dist-ssr
 *.local
 
-# Persisted data (news, faq) — local dev only
-data/
+# Persisted data (news, faq) — local dev only.
+# Anchored to repo root so it doesn't shadow src/data/.
+/data/
 
 # Local Claude Code config
 .claude/
