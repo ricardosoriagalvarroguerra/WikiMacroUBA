@@ -53,20 +53,22 @@ export const CLASSES: ClassEntry[] = [
   {
     id: "clase-02",
     number: 2,
-    title: "Clase 2",
+    title: "Clase 2 · Dinero, precios, inflación y poder adquisitivo",
     link: "https://clase02uba-production.up.railway.app",
     status: "publicada",
-    summary: "Material disponible en el sitio dedicado a la clase.",
+    summary:
+      "Segunda clase: el dinero y su valor real. Qué funciones cumple el dinero en una economía, cómo se mide la inflación (IPC vs. deflactor del PIB y por qué pueden dar distinto), la distinción entre variables nominales y reales aplicada al salario y al poder adquisitivo, el rol de las expectativas como mecanismo que autorrealiza la inflación, y un recorrido por la inflación argentina entre 1980 y 2025.",
     keyConcepts: [],
     reviewQuestions: [],
   },
   {
     id: "clase-03",
     number: 3,
-    title: "Clase 3",
+    title: "Clase 3 · Inflación: las seis discusiones que la atraviesan",
     link: "https://clase03uba-production.up.railway.app",
     status: "publicada",
-    summary: "Material disponible en el sitio dedicado a la clase.",
+    summary:
+      "Tercera clase: por qué la inflación es uno de los temas más debatidos de la macroeconomía moderna. Recorremos seis discusiones clave —causas monetarias vs. estructurales, inflación inercial, reglas vs. discrecionalidad del banco central, costo de la desinflación (sacrifice ratio), casos históricos de estabilización (Bolivia 1985, Plan Austral, Plano Real, Convertibilidad) y cómo se distribuye el costo de bajar la inflación— y cómo siguen vivas en la Argentina de hoy.",
     keyConcepts: [],
     reviewQuestions: [],
   },
